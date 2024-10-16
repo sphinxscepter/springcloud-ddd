@@ -10,8 +10,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>gateway</module>
-        <module>uas</module>
         <module>platform</module>
+        <module>uas</module>
         <module>domain-web</module>
         <module>domain-webflux</module>
         <module>common</module>
@@ -19,8 +19,8 @@
 
     <properties>
         <!-- Environment Settings -->
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- Spring Cloud Settings -->
@@ -33,7 +33,7 @@
 
         <!-- Commons Settings -->
         <swagger2.version>2.9.2</swagger2.version>
-        <lombok.version>1.18.6</lombok.version>
+        <lombok.version>1.18.22</lombok.version>
         <redission.version>3.11.5</redission.version>
     </properties>
 
@@ -70,6 +70,11 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.14.0</version>
             </dependency>
             <!-- Commons End -->
         </dependencies>
